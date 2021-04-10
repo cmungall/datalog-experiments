@@ -49,7 +49,7 @@ chain(p, p1, p2) :-
 edge(s, p, o) :- rdf(s, p, o).
 
 // subProperty edge inference
-edge(s, p, o) :- rdf(s, p1, o), subPropertyOf_tr(p1,p).
+edge(s, p, o) :- edge(s, p1, o), subPropertyOf_tr(p1,p).
 
 // materialize s subClassOf p some o ==> edges
 edge(s, p, o) :- subClassOf(s, restr),
