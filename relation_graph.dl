@@ -1,3 +1,12 @@
+/*
+
+  relation_graph / owlstar inference
+
+*/
+
+//.type owlClassExpression <: symbol
+//.type owlPropertyExpression <: symbol
+
 .decl rdf(s:symbol, p:symbol, o:symbol)
 .input rdf
 
@@ -7,17 +16,52 @@
 .decl chain(p:symbol, p1:symbol, p2:symbol)
 .decl transitive(p:symbol)
 .decl subClassOf(s:symbol, o:symbol)
+.decl subPropertyOf(s:symbol, o:symbol)
+.decl subPropertyOf_tr(s:symbol, o:symbol)
 
-subClassOf(s,o) :- rdf(s,"<http://www.w3.org/2000/01/rdf-schema#subClassOf>",o).
-transitive("<http://www.w3.org/2000/01/rdf-schema#subClassOf>").
+
+// convenience predicate
 transitive(p) :- rdf(p, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#TransitiveProperty>").
-chain(p, p, p) :- transitive(p).
+transitive("<http://www.w3.org/2000/01/rdf-schema#subClassOf>").
 
+// convenience predicate for asserted subclass
+subClassOf(s,o) :- rdf(s,"<http://www.w3.org/2000/01/rdf-schema#subClassOf>",o).
+
+// convenience predicate for asserted subproperty
+subPropertyOf(s,o) :- rdf(s,"<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>",o).
+
+// transitive subpropertyOf
+subPropertyOf_tr(s,o) :- subPropertyOf(s,o).
+subPropertyOf_tr(s,o) :- subPropertyOf(s,z), subPropertyOf_tr(z,o).
+.output subPropertyOf_tr
+
+// property chains (currently only length 2 supported)
+chain(p, p, p) :- transitive(p).
+chain(p, p1, p2) :-
+  rdf(p,"<http://www.w3.org/2002/07/owl#propertyChainAxiom>",list),
+  rdf(list,"<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",p1),
+  rdf(list,"<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>",list2),
+  rdf(list2,"<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>",p2),
+  rdf(list2,"<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>","<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>").
+.output chain
+
+// base case (do all edges for now, but we can restrict to classes)
 edge(s, p, o) :- rdf(s, p, o).
+
+// subProperty edge inference
+edge(s, p, o) :- rdf(s, p1, o), subPropertyOf_tr(p1,p).
+
+// materialize s subClassOf p some o ==> edges
 edge(s, p, o) :- subClassOf(s, restr),
         rdf(restr,"<http://www.w3.org/2002/07/owl#onProperty>", p),
         rdf(restr,"<http://www.w3.org/2002/07/owl#someValuesFrom>", o).
+
+// property chain inference (including transitivity)
 edge(s, p, o) :- rdf(s, p1, z), edge(z, p2, o), chain(p, p1, p2).
-//edge(s, p, o) :- rdf(s, p, z), edge(z, p, o), transitive(p).
+
+// someValuesFrom propagates over subclass on either side
+edge(s, p, o) :- edge(s,"<http://www.w3.org/2000/01/rdf-schema#subClassOf>",s1),edge(s1,p,o1),edge(o1,"<http://www.w3.org/2000/01/rdf-schema#subClassOf>",o).
+
+// reflexivity of subclassOf
 edge(s, "<http://www.w3.org/2000/01/rdf-schema#subClassOf>", s) :- rdf(s, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#Class>").
 

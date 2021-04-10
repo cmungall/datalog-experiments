@@ -26,8 +26,12 @@ download/%.owl:
 	curl -L -s http://purl.obolibrary.org/obo/$*.owl > $@
 .PRECIOUS: download/%.owl
 
-%/rdf.facts: download/%.owl
+%/rdf-base.facts: download/%.owl
 	robot query -f tsv -i download/$*.owl -q sparql/triples.rq $@
+.PRECIOUS: %/rdf-base.facts
+
+%/rdf.facts: %/rdf-base.facts ro/rdf-base.facts
+	cat $^ > $@
 .PRECIOUS: %/rdf.facts
 
 rg-%: %/rdf.facts
