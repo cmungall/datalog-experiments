@@ -43,3 +43,14 @@ sys     0m26.905s
 ## Connectivity Reasoning
 
 The datalog framework makes it easy to extend inference to include edge weights etc
+
+the following is for edges where all weights are one, but easy to extend
+
+```prolog
+.decl edge(x:symbol, y:symbol)
+.input edge
+.decl path(x:symbol, y:symbol, d:number)
+.output path
+path(x, y, 1) :- edge(x, y).
+path(x, y, d+1) :- path(x, z, d), edge(z, y).
+```
