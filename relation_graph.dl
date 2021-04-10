@@ -1,8 +1,4 @@
-/*
-
-  relation_graph / owlstar inference
-
-*/
+// relation_graph / owlstar inference
 
 //.type owlClassExpression <: symbol
 //.type owlPropertyExpression <: symbol
@@ -10,6 +6,7 @@
 .decl rdf(s:symbol, p:symbol, o:symbol)
 .input rdf
 
+// relation graph edge: subClassOf between named classes OR C sub R some D OR an ObjectPropertyAssertion OR a type assertion
 .decl edge(s:symbol, p:symbol, o:symbol)
 .output edge
 
@@ -18,7 +15,14 @@
 .decl subClassOf(s:symbol, o:symbol)
 .decl subPropertyOf(s:symbol, o:symbol)
 .decl subPropertyOf_tr(s:symbol, o:symbol)
+.decl owl_class(s: symbol)
+.decl owl_named_individual(s: symbol)
+.decl owl_named_entity(s: symbol)
 
+
+owl_class(x) :- rdf(x, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#Class>").
+owl_named_individual(x) :- rdf(x, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#NamedIndividual>").
+owl_named_entity(x) :- owl_class(x) ; owl_named_individual(x).
 
 // convenience predicate
 transitive(p) :- rdf(p, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#TransitiveProperty>").
@@ -46,7 +50,7 @@ chain(p, p1, p2) :-
 .output chain
 
 // base case (do all edges for now, but we can restrict to classes)
-edge(s, p, o) :- rdf(s, p, o).
+edge(s, p, o) :- rdf(s, p, o), owl_named_entity(s), owl_named_entity(o).
 
 // subProperty edge inference
 edge(s, p, o) :- edge(s, p1, o), subPropertyOf_tr(p1,p).

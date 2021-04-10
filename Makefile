@@ -22,6 +22,10 @@ compile: bin/example
 bin/%: %.dl
 	souffle -F. -D. -obin/$* $<
 
+merged/%.owl: download/%.owl download/ro.owl
+	robot merge -i $< -i download/ro.owl -o $@
+.PRECIOUS: merged/%.owl
+
 download/%.owl:
 	curl -L -s http://purl.obolibrary.org/obo/$*.owl > $@
 .PRECIOUS: download/%.owl
@@ -34,5 +38,12 @@ download/%.owl:
 	cat $^ > $@
 .PRECIOUS: %/rdf.facts
 
+MON = uberon ro mondo hp mp go chebi
+monarch/rdf.facts: $(patsubst %, %/rdf-base.facts, $(MON))
+	cat $^ > $@
+
 rg-%: %/rdf.facts
 	souffle -F$* -D$* relation_graph.dl
+
+owlrg-%: merged/%.owl
+	time relation-graph --ontology-file $< --non-redundant-output-file $*/owlrg-nr.ttl --redundant-output-file $*/owlrg-r.ttl > $@
