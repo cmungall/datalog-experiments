@@ -1,0 +1,6 @@
+download
+*/*.csv
+*/*.facts
+*/*.old
+bin/example
+RDF-Cache/
