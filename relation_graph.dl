@@ -1,0 +1,23 @@
+.decl rdf(s:symbol, p:symbol, o:symbol)
+.input rdf
+
+.decl edge(s:symbol, p:symbol, o:symbol)
+.output edge
+
+.decl chain(p:symbol, p1:symbol, p2:symbol)
+.decl transitive(p:symbol)
+.decl subClassOf(s:symbol, o:symbol)
+
+subClassOf(s,o) :- rdf(s,"<http://www.w3.org/2000/01/rdf-schema#subClassOf>",o).
+transitive("<http://www.w3.org/2000/01/rdf-schema#subClassOf>").
+transitive(p) :- rdf(p, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#TransitiveProperty>").
+chain(p, p, p) :- transitive(p).
+
+edge(s, p, o) :- rdf(s, p, o).
+edge(s, p, o) :- subClassOf(s, restr),
+        rdf(restr,"<http://www.w3.org/2002/07/owl#onProperty>", p),
+        rdf(restr,"<http://www.w3.org/2002/07/owl#someValuesFrom>", o).
+edge(s, p, o) :- rdf(s, p1, z), edge(z, p2, o), chain(p, p1, p2).
+//edge(s, p, o) :- rdf(s, p, z), edge(z, p, o), transitive(p).
+edge(s, "<http://www.w3.org/2000/01/rdf-schema#subClassOf>", s) :- rdf(s, "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>", "<http://www.w3.org/2002/07/owl#Class>").
+
