@@ -36,6 +36,27 @@ user    115m0.706s
 sys     0m26.905s
 
 
+ souffle	3.53 GB	1	10	47026	cjm	100.6	12:42.29	(null)	0.0	0.00	(null)	-	No	No	No	0 bytes	0 bytes	0 bytes	No	No	(null)	0 bytes	0 bytes	0	0	0 bytes	0 bytes	0 bytes	0 bytes	No	
+
+
+
+$ make owlrg-pato
+robot merge -i download/pato.owl -i download/ro.owl -o merged/pato.owl
+time relation-graph --ontology-file merged/pato.owl --non-redundant-output-file pato/owlrg-nr.ttl --redundant-output-file pato/owlrg-r.ttl > owlrg-pato
+
+real    1m44.861s
+user    11m12.267s
+sys     0m12.823s
+
+
+$ time make rg-monarch
+souffle -Fmonarch -Dmonarch relation_graph.dl
+
+real    103m48.471s
+user    33m36.784s
+sys     0m22.535s
+
+
 
 
 Sat Apr 10 15:28:56 PDT 2021
