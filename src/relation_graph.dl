@@ -1,0 +1,47 @@
+/**
+ relation_graph / owlstar inference
+*/
+#include "owl_from_rdf.dl"
+#include "test_harness.dl"
+
+// direct edges
+
+// relation graph edge: subClassOf between named classes OR C sub R some D OR an ObjectPropertyAssertion OR a type assertion
+.decl asserted_edge(s:symbol, p:symbol, o:symbol)
+.output asserted_edge
+
+.decl isa(s: symbol, o: symbol)
+.decl isa_inf(s: symbol, o: symbol)
+isa(s,o) :- subClassOf(s,o), owl_class(s), owl_class(o).
+isa_inf(s, s) :- owl_class(s).
+isa_inf(s, o) :- isa(s, o).
+isa_inf(s, o) :- isa(s, z), isa_inf(z, o).
+
+.decl edge(s:symbol, p:symbol, o:symbol)
+.output edge
+
+// base case (do all edges for now, but we can restrict to classes)
+asserted_edge(s, p, o) :- rdf(s, p, o), owl_named_entity(s), owl_named_entity(o).
+
+// materialize s subClassOf p some o ==> edges
+asserted_edge(s, p, o) :- subClassOf(s, restr),
+        rdf(restr,OWL_ON_PROPERTY, p),
+        rdf(restr,OWL_SOME_VALUES_FROM, o).
+
+/** OWLStar inference
+
+*/
+// subProperty edge inference
+edge(s, p, o) :- asserted_edge(s,p,o).
+edge(s, p, o) :- edge(s, p1, o), subPropertyOf_tr(p1,p).
+
+// property chain inference (including transitivity)
+edge(s, p, o) :- edge(s, p1, z), edge(z, p2, o), chain(p, p1, p2).
+
+// someValuesFrom propagates over subclass on either side
+//edge(s, p, o) :- edge(s,RDFS_SUBCLASS_OF,s1),edge(s1,p,o1),edge(o1,RDFS_SUBCLASS_OF,o).
+edge(s, p, o) :- isa_inf(s, s1), edge(s1, p, o1), isa_inf(o1, o).
+
+// reflexivity of subclassOf
+edge(s, RDFS_SUBCLASS_OF, s) :- rdf(s, RDF_TYPE, OWL_CLASS).
+

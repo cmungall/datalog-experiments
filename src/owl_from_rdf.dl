@@ -1,0 +1,53 @@
+#include "src/prefixes.dl"
+//.type owlClassExpression <: symbol
+//.type owlPropertyExpression <: symbol
+
+.decl rdf(s:symbol, p:symbol, o:symbol)
+.input rdf
+
+/**
+
+RDF to OWL mapping
+
+*/
+.decl chain(p:symbol, p1:symbol, p2:symbol)
+.decl transitive(p:symbol)
+.decl subClassOf(s:symbol, o:symbol)
+.decl subPropertyOf(s:symbol, o:symbol)
+.decl subPropertyOf_tr(s:symbol, o:symbol)
+.decl owl_class(s: symbol)
+.decl owl_named_individual(s: symbol)
+.decl owl_named_entity(s: symbol)
+
+
+
+owl_class(x) :- rdf(x, RDF_TYPE, OWL_CLASS).
+//owl_class(x) :- rdf(x, RDFS_SUBCLASS_OF, _).
+//owl_class(x) :- rdf(_, RDFS_SUBCLASS_OF, x).
+owl_named_individual(x) :- rdf(x, RDF_TYPE, OWL_NAMED_INDIVIDUAL).
+owl_named_entity(x) :- owl_class(x) ; owl_named_individual(x).
+
+// convenience predicate
+transitive(p) :- rdf(p, RDF_TYPE, OWL_TRANSITIVE_PROPERTY).
+transitive(RDFS_SUBCLASS_OF).
+
+// convenience predicate for asserted subclass
+subClassOf(s,o) :- rdf(s,RDFS_SUBCLASS_OF,o).
+
+// convenience predicate for asserted subproperty
+subPropertyOf(s,o) :- rdf(s,RDFS_SUBPROPERTY_OF,o).
+
+// transitive subpropertyOf
+subPropertyOf_tr(s,o) :- subPropertyOf(s,o).
+subPropertyOf_tr(s,o) :- subPropertyOf(s,z), subPropertyOf_tr(z,o).
+//.output subPropertyOf_tr
+
+// property chains (currently only length 2 supported)
+chain(p, p1, p2) :-
+    rdf(p,OWL_PROPERTY_CHAIN_AXIOM,list),
+    rdf(list, RDF_FIRST, p1),
+    rdf(list, RDF_REST, list2),
+    rdf(list2, RDF_FIRST, p2),
+    rdf(list2, RDF_REST, RDF_NIL).
+chain(p, p, p) :- transitive(p).
+.output chain

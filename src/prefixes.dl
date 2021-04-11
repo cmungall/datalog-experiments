@@ -1,3 +1,5 @@
+/** prefixes and macros for common vocabulary URIs
+*/
 #define RDF_TYPE "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>"
 #define OWL_CLASS "<http://www.w3.org/2002/07/owl#Class>"
 #define RDFS_SUBCLASS_OF "<http://www.w3.org/2000/01/rdf-schema#subClassOf>"

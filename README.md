@@ -6,7 +6,7 @@ Currently testing an implementation of relation-graph in datalog.
 
 See:
 
- * [relation_graph.dl](relation_graph.dl)
+ * [src/relation_graph.dl](src/relation_graph.dl)
 
 This is a datalog program using the souffle framework. It takes as
 input triples as a TSV. Half of the DL program is mapping a subset of

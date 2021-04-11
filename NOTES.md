@@ -1,4 +1,41 @@
-Sat Apr 10 15:29:05 PDT 2021
+## Sun Apr 11 16:24:22 PDT 2021
+
+fixed transitivity error
+
+$ make rg-go
+(time souffle -Fgo -Dgo relation_graph.dl) >> go/LOG 
+Error loading data: Cannot open fact file unexpected.facts
+
+
+real    0m44.020s
+user    0m43.276s
+sys     0m0.675s
+
+
+time make rg-uberon
+(time souffle -Fuberon -Duberon relation_graph.dl) >> uberon/LOG
+Error loading data: Cannot open fact file expected.facts
+
+Error loading data: Cannot open fact file unexpected.facts
+
+
+real    2m57.658s
+user    2m56.432s
+sys     0m1.017s
+
+$ make rg-mondo
+(time souffle -Fmondo -Dmondo relation_graph.dl) >> mondo/LOG
+Error loading data: Cannot open fact file expected.facts
+
+Error loading data: Cannot open fact file unexpected.facts
+
+
+real    3m31.627s
+user    3m28.470s
+sys     0m1.674s
+
+
+## Sat Apr 10 15:29:05 PDT 2021
 type-restrict
 
 $ time make rg-go
