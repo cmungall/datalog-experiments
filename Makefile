@@ -1,6 +1,6 @@
 BENCHDIR = benchmarks
 TESTDIR = tests
-BENCH_ONTS = uberon pato ro mondo hp mp go chebi
+BENCH_ONTS = uberon pato ro mondo hp mp go chebi obi zfa envo
 
 # ----------------------------------------
 # Tests
@@ -19,14 +19,27 @@ t-%: $(TESTDIR)/%/rdf.facts
 # Benchmarks
 # ----------------------------------------
 
-all_bench: $(patsubst %, benchmark-dl-%, $(BENCH_ONTS))
+all_bench: all_bench_dl all_bench_whelk
+all_bench_dl: $(patsubst %, benchmark-dl-%, $(BENCH_ONTS))
+all_bench_whelk: $(patsubst %, benchmark-whelk-%, $(BENCH_ONTS))
 
-report_bench: $(patsubst %, report-%, $(BENCH_ONTS))
+stats:
+	make report_bench | ./util/parse-rpt.pl
 
-report-%:
+report_bench: $(patsubst %, report-all-%, $(BENCH_ONTS))
+
+report-all-%: report-dl-% report-whelk-%
+	echo hi
+
+report-dl-%:
 	@echo ;
-	@echo "## ONTOLOGY: " $* ;
+	@echo "## ONTOLOGY: " $* " SYSTEM: DATALOG";
 	@cat $(BENCHDIR)/$*/DL-LOG
+
+report-whelk-%:
+	@echo ;
+	@echo "## ONTOLOGY: " $* " SYSTEM: WHELK";
+	@cat $(BENCHDIR)/$*/WHELK-LOG
 
 merged/%.owl: download/%.owl download/ro.owl
 	robot merge -i $< -i download/ro.owl -o $@
@@ -56,7 +69,7 @@ benchmark-dl-%: $(BENCHDIR)/%/rdf.facts
 	(time souffle -F$(BENCHDIR)/$* -D$(BENCHDIR)/$* src/relation_graph.dl) >& $(BENCHDIR)/$*/DL-LOG && cat $(BENCHDIR)/$*/{DL-LOG,test_summary.csv}
 
 benchmark-whelk-%: merged/%.owl
-	(time relation-graph --ontology-file $< --non-redundant-output-file $(BENCHDIR)/$*/owlrg-nr.ttl --redundant-output-file $(BENCHDIR)/$*/owlrg-r.ttl) >& $(BENCHDIR)/$*/WHELK-LOG && cat $(BENCHDIR)/$*/{WHELK-LOG,test}
+	(time relation-graph --ontology-file $< --non-redundant-output-file $(BENCHDIR)/$*/owlrg-nr.ttl --redundant-output-file $(BENCHDIR)/$*/owlrg-r.ttl) >& $(BENCHDIR)/$*/WHELK-LOG && cat $(BENCHDIR)/$*/WHELK-LOG
 
 %.sorted: %
 	perl -npe 's@\s*\.\s*\n@\n@g;s@ @\t@g' $< | sort > $@
