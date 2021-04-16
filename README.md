@@ -14,31 +14,43 @@ RDF to OWL (we assume pre-reasoning using robot etc, the goal here is
 to build something that provides all inferred subclass/existentials as
 owlstar-style triples.
 
-I have not yet formally checked the completeness of these rules. There
-are likely parts of Elk's profile missing but I think it covers
-everything we typically need for complete RGs.
+## Current results
 
-uberon completes in ~30s:
+|Reasoner|Ontology|Time|
+|---|---|---|
+|DATALOG|uberon|443.295|
+|OWL|uberon|524.126|
+|DATALOG|pato|1.986|
+|OWL|pato|60.802|
+|DATALOG|ro|0.065|
+|OWL|ro|6.593|
+|DATALOG|mondo|196.747|
+|OWL|mondo|1208.941|
+|DATALOG|hp|91.252|
+|OWL|hp|671.6|
+|DATALOG|mp|157.588|
+|OWL|mp|1105.9|
+|DATALOG|go|104.101|
+|OWL|go|1115.936|
+|DATALOG|chebi|460.024|
+|OWL|chebi|563.541|
+|DATALOG|obi|1.802|
+|OWL|obi|108.82|
+|DATALOG|zfa|5.261|
+|OWL|zfa|68.149|
+|DATALOG|envo|6.481|
+|OWL|envo|104.404|
 
-```bash
-$ time make rg-uberon
-souffle -Fuberon -Duberon relation_graph.dl
+using relation-graph
 
-real    0m27.892s
-user    0m27.366s
-sys     0m0.477s
-```
+the analysis needs thoroughly checked...
 
-compare with OWL:
+## EL classifier
 
-```bash
-$ make owlrg-uberon
-time relation-graph --ontology-file merged/uberon.owl --non-redundant-output-file uberon/owlrg-nr.ttl --redundant-output-file uberon/owlrg-r.ttl > owlrg-uberon
+There is a classifier for a subset of EL but it does not appear to be performant:
 
-real    7m47.015s
-user    115m0.706s
-sys     0m26.905s
-```
+ * [src/el_classifier.dl](src/el_classifier.dl)
+
 
 ## Connectivity Reasoning
 

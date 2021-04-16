@@ -1,0 +1,24 @@
+/** test harness
+*/
+.decl expected(s:symbol, p:symbol,o:symbol)
+.input expected
+
+// test harness
+.decl unexpected(s:symbol, p:symbol, o:symbol)
+.input unexpected
+
+.decl fail(test: symbol, s:symbol, p:symbol, o:symbol)
+.output fail
+.decl pass(test: symbol, s:symbol, p:symbol, o:symbol)
+.output pass
+
+fail("expected", s,p,o) :- expected(s,p,o), ! edge(s,p,o).
+fail("unexpected", s,p,o) :- unexpected(s,p,o), edge(s,p,o).
+pass("expected", s,p,o) :- expected(s,p,o), edge(s,p,o).
+pass("unexpected", s,p,o) :- unexpected(s,p,o), ! edge(s,p,o).
+
+.decl test_summary(n_pass:number, n_fail:number)
+.output test_summary
+test_summary(n_pass, n_fail) :-
+    n_pass = count:{pass(_,_,_,_)},
+    n_fail = count:{fail(_,_,_,_)}.

@@ -1,0 +1,3 @@
+<http://x.org/Nail>	subClassOf_inf_direct	<http://x.org/Nail>
+<http://x.org/Autopod>	subClassOf_inf_direct	<http://x.org/Hand>
+<http://x.org/Digit>	subClassOf_inf_direct	<http://x.org/Autopod>

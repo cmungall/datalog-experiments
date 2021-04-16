@@ -1,0 +1,620 @@
+?s	?p	?o
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid49	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:go_curators"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid49	<http://www.w3.org/2002/07/owl#annotatedTarget>	"Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid49	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid49	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0043227>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid49	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0019867>	<http://www.w3.org/2000/01/rdf-schema#label>	"outer membrane"
+<http://purl.obolibrary.org/obo/GO_0019867>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+<http://purl.obolibrary.org/obo/GO_0019867>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0019867"
+<http://purl.obolibrary.org/obo/GO_0019867>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The external membrane of Gram-negative bacteria or certain organelles such as mitochondria and chloroplasts; freely permeable to most ions and metabolites."
+<http://purl.obolibrary.org/obo/GO_0019867>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0016020>
+<http://purl.obolibrary.org/obo/GO_0019867>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Cytoplasm"
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005737"
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid17
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.w3.org/2000/01/rdf-schema#label>	"cytoplasm"
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://purl.obolibrary.org/obo/IAO_0000115>	"All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures."
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005737>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid30	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid30	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The inner, i.e. lumen-facing, lipid bilayer of an organelle envelope; usually highly selective to most ions and metabolites."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid30	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid30	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0019866>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid30	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://www.w3.org/2000/01/rdf-schema#comment>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid43	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0012505>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid43	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid43	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid4	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:nlx_subcell_100315"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid4	<http://www.w3.org/2002/07/owl#annotatedTarget>	"subcellular entity"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid4	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid4	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005575>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid4	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	<http://www.w3.org/2000/01/rdf-schema#label>	"has_narrow_synonym"
+<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear inner membrane"
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005637"
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"inner nuclear membrane"
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1612527463"
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"inner envelope"
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The inner, i.e. lumen-facing, lipid bilayer of the nuclear envelope."
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031965>
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0019866>
+<http://purl.obolibrary.org/obo/GO_0005637>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid15	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0042175>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid15	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid15	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	<http://www.w3.org/2000/01/rdf-schema#label>	"has_related_synonym"
+<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0815316194"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:dos"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0016020>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid28	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_plant"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_agr>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_agr>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_agr"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_agr>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear membrane"
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0031965"
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1687101204"
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://purl.obolibrary.org/obo/IAO_0000115>	"Either of the lipid bilayers that surround the nucleus and form the nuclear envelope; excludes the intermembrane space."
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid35
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031090>
+<http://purl.obolibrary.org/obo/GO_0031965>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid50	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:go_curators"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid50	<http://www.w3.org/2002/07/owl#annotatedTarget>	"Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid50	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid50	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0043229>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid50	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_aspergillus"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/BFO_0000051>	<http://www.w3.org/2000/01/rdf-schema#label>	"has part"
+<http://purl.obolibrary.org/obo/BFO_0000051>	<http://www.geneontology.org/formats/oboInOwl#id>	"BFO:0000051"
+<http://purl.obolibrary.org/obo/BFO_0000051>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"BFO:0000051"
+<http://purl.obolibrary.org/obo/BFO_0000051>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#TransitiveProperty>
+<http://purl.obolibrary.org/obo/BFO_0000051>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#ObjectProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid22	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0716731363"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid22	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid22	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid22	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005886>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid22	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid35	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0005635>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid35	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid35	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"PMID:15030757"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:vw"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:al"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.w3.org/2002/07/owl#annotatedTarget>	"horsetail nucleus"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005634>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid9	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid48	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:go_curators"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid48	<http://www.w3.org/2002/07/owl#annotatedTarget>	"Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid48	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid48	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0043226>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid48	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0019866>	<http://www.w3.org/2000/01/rdf-schema#label>	"organelle inner membrane"
+<http://purl.obolibrary.org/obo/GO_0019866>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0019866"
+<http://purl.obolibrary.org/obo/GO_0019866>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The inner, i.e. lumen-facing, lipid bilayer of an organelle envelope; usually highly selective to most ions and metabolites."
+<http://purl.obolibrary.org/obo/GO_0019866>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid29
+<http://purl.obolibrary.org/obo/GO_0019866>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031090>
+<http://purl.obolibrary.org/obo/GO_0019866>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>	<http://www.w3.org/2000/01/rdf-schema#label>	"subset_property"
+<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_metagenomics"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_drosophila>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_drosophila>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_drosophila"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_drosophila>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_manually_annotate>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_manually_annotate>	<http://www.w3.org/2000/01/rdf-schema#comment>	"gocheck_do_not_manually_annotate"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_manually_annotate>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid3	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1337158144"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid3	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:pdt"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid3	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome)."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid3	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid3	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005575>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid3	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid42	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:pz"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid42	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid42	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A multilayered structure surrounding all or part of a cell; encompasses one or more lipid bilayers, and may include a cell wall layer; also includes the space between layers."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid42	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid42	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0031975>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid42	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"PMID:21411627"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:vw"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:kmv"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.w3.org/2002/07/owl#annotatedTarget>	"inner nuclear membrane"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005637>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid14	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid27	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:lh"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid27	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A collection of membranous structures involved in transport within the cell. The main components of the endomembrane system are endoplasmic reticulum, Golgi bodies, vesicles, cell membrane and nuclear envelope. Members of the endomembrane system pass materials through each other or though the use of vesicles."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid27	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid27	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0012505>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid27	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0071944>	<http://www.w3.org/2000/01/rdf-schema#label>	"cell periphery"
+<http://purl.obolibrary.org/obo/GO_0071944>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>
+<http://purl.obolibrary.org/obo/GO_0071944>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0071944"
+<http://purl.obolibrary.org/obo/GO_0071944>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The part of a cell encompassing the cell cortex, the plasma membrane, and any external encapsulating structures."
+<http://purl.obolibrary.org/obo/GO_0071944>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0071944>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_annotate>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_annotate>	<http://www.w3.org/2000/01/rdf-schema#comment>	"gocheck_do_not_annotate"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_annotate>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0098588>	<http://www.w3.org/2000/01/rdf-schema#label>	"bounding membrane of organelle"
+<http://purl.obolibrary.org/obo/GO_0098588>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0098588"
+<http://purl.obolibrary.org/obo/GO_0098588>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The lipid bilayer that forms the outer-most layer of an organelle."
+<http://purl.obolibrary.org/obo/GO_0098588>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031090>
+<http://purl.obolibrary.org/obo/GO_0098588>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.w3.org/2000/01/rdf-schema#label>	"intracellular membrane-bounded organelle"
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0043231"
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"intracellular membrane-enclosed organelle"
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://purl.obolibrary.org/obo/IAO_0000115>	"Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane."
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0043229>
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0043227>
+<http://purl.obolibrary.org/obo/GO_0043231>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/BFO_0000050>	<http://www.w3.org/2000/01/rdf-schema#label>	"part of"
+<http://purl.obolibrary.org/obo/BFO_0000050>	<http://www.geneontology.org/formats/oboInOwl#id>	"BFO:0000050"
+<http://purl.obolibrary.org/obo/BFO_0000050>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"BFO:0000050"
+<http://purl.obolibrary.org/obo/BFO_0000050>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#TransitiveProperty>
+<http://purl.obolibrary.org/obo/BFO_0000050>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#ObjectProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid21	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0071944>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid21	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid21	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/GO_0043229>	<http://www.w3.org/2000/01/rdf-schema#label>	"intracellular organelle"
+<http://purl.obolibrary.org/obo/GO_0043229>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0043229>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0043229"
+<http://purl.obolibrary.org/obo/GO_0043229>	<http://purl.obolibrary.org/obo/IAO_0000115>	"Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane."
+<http://purl.obolibrary.org/obo/GO_0043229>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0005622>
+<http://purl.obolibrary.org/obo/GO_0043229>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid34	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao830981606"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid34	<http://www.w3.org/2002/07/owl#annotatedTarget>	"intracellular membrane"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid34	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid34	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0031090>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid34	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://www.geneontology.org/formats/oboInOwl#id>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid8	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:go_curators"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid8	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid8	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid8	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005634>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid8	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid47	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid47	<http://www.w3.org/2002/07/owl#annotatedTarget>	"nuclear envelope-endoplasmic reticulum network"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid47	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid47	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0042175>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid47	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid19	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0005737>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid19	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid19	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/IAO_0000115>	<http://www.w3.org/2000/01/rdf-schema#label>	"definition"
+<http://purl.obolibrary.org/obo/IAO_0000115>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.w3.org/2000/01/rdf-schema#label>	"intracellular anatomical structure"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"internal to cell"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm."
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"protoplasm"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"nucleocytoplasm"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005622"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"intracellular"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Intracellular"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"protoplast"
+<http://purl.obolibrary.org/obo/GO_0005622>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#gocheck_do_not_annotate>
+<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://www.w3.org/2000/01/rdf-schema#label>	"in_subset"
+<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid2	<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid1
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid2	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>	<http://purl.obolibrary.org/obo/BFO_0000051>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid2	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#List>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid41	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid41	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The outer, i.e. cytoplasm-facing in a cellular organelle, lipid bilayer of an organelle envelope."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid41	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid41	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0031968>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid41	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid11
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005635"
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The double lipid bilayer enclosing the nucleus and separating its contents from the rest of the cytoplasm; includes the intermembrane space, a gap of width 20-40 nm (also called the perinuclear space)."
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031967>
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid10
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Nuclear_envelope"
+<http://purl.obolibrary.org/obo/GO_0005635>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear envelope"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid13	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:ma"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid13	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The inner, i.e. lumen-facing, lipid bilayer of the nuclear envelope."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid13	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid13	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005637>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid13	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid54	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:kmv"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid54	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid54	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid54	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0110165>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid54	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_mouse"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid26	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0005886>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid26	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000051>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid26	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://www.w3.org/2000/01/rdf-schema#label>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid39	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:pz"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid39	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid39	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A double membrane structure enclosing an organelle, including two lipid bilayers and the region between them. In some cases, an organelle envelope may have more than two membranes."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid39	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid39	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0031967>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid39	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_chembl"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	<http://www.w3.org/2000/01/rdf-schema#label>	"has_exact_synonym"
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid20	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0198506732"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid20	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mtg_sensu"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid20	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A closed structure, found only in eukaryotic cells, that is completely surrounded by unit membrane and contains liquid material. Cells contain one or several vacuoles, that may have different functions from each other. Vacuoles have a diverse array of functions. They can act as a storage organelle for nutrients or waste products, as a degradative compartment, as a cost-effective way of increasing cell size, and as a homeostatic regulator controlling both turgor pressure and pH of the cytosol."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid20	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid20	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005773>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid20	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid33	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid33	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:dos"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid33	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A membrane that is one of the two lipid bilayers of an organelle envelope or the outermost membrane of single membrane bound organelle."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid33	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid33	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0031090>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid33	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid7	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid7	<http://www.w3.org/2002/07/owl#annotatedTarget>	"protoplast"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid7	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid7	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005622>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid7	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	<http://www.w3.org/2000/01/rdf-schema#label>	"database_cross_reference"
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid46	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid46	<http://www.w3.org/2002/07/owl#annotatedTarget>	"nuclear membrane-endoplasmic reticulum continuum"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid46	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid46	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0042175>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid46	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid18	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0198547684"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid18	<http://www.w3.org/2002/07/owl#annotatedTarget>	"All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid18	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid18	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005737>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid18	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_generic"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0110165>	<http://www.w3.org/2000/01/rdf-schema#label>	"cellular anatomical entity"
+<http://purl.obolibrary.org/obo/GO_0110165>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0110165"
+<http://purl.obolibrary.org/obo/GO_0110165>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex."
+<http://purl.obolibrary.org/obo/GO_0110165>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0005575>
+<http://purl.obolibrary.org/obo/GO_0110165>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_yeast"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid40	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0031967>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid40	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid40	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid1	<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid1	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid1	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#List>
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://www.w3.org/2000/01/rdf-schema#label>	"organelle outer membrane"
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0031968"
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The outer, i.e. cytoplasm-facing in a cellular organelle, lipid bilayer of an organelle envelope."
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid40
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0098588>
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0019867>
+<http://purl.obolibrary.org/obo/GO_0031968>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_drosophila>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005634"
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0043231>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_agr>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"cell nucleus"
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.w3.org/2000/01/rdf-schema#label>	"nucleus"
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent."
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"horsetail nucleus"
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1702920020"
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Cell_nucleus"
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0005634>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid12	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0198547684"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid12	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The double lipid bilayer enclosing the nucleus and separating its contents from the rest of the cytoplasm; includes the intermembrane space, a gap of width 20-40 nm (also called the perinuclear space)."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid12	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid12	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005635>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid12	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid53	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:dos"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid53	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The lipid bilayer that forms the outer-most layer of an organelle."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid53	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid53	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0098588>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid53	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid25	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0005773>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid25	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000051>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid25	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid38	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0043229>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid38	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid38	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"cell or subcellular entity"
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"cellular component"
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005575"
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1337158144"
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome)."
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"subcellular entity"
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.w3.org/2000/01/rdf-schema#label>	"cellular_component"
+<http://purl.obolibrary.org/obo/GO_0005575>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_candida"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_pir"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pombe>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pombe>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_pombe"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pombe>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0031975>	<http://www.w3.org/2000/01/rdf-schema#label>	"envelope"
+<http://purl.obolibrary.org/obo/GO_0031975>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0031975"
+<http://purl.obolibrary.org/obo/GO_0031975>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A multilayered structure surrounding all or part of a cell; encompasses one or more lipid bilayers, and may include a cell wall layer; also includes the space between layers."
+<http://purl.obolibrary.org/obo/GO_0031975>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0031975>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"region of membrane"
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it."
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0016020"
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"membrane region"
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"whole membrane"
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.w3.org/2000/01/rdf-schema#label>	"membrane"
+<http://purl.obolibrary.org/obo/GO_0016020>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Biological_membrane"
+<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	<http://www.w3.org/2000/01/rdf-schema#label>	"has_broad_synonym"
+<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid32	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0043227>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid32	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid32	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://www.w3.org/2000/01/rdf-schema#label>	"membrane-bounded organelle"
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0043227"
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"membrane-enclosed organelle"
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao414196390"
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://purl.obolibrary.org/obo/IAO_0000115>	"Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane."
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0043226>
+<http://purl.obolibrary.org/obo/GO_0043227>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid6	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid6	<http://www.w3.org/2002/07/owl#annotatedTarget>	"nucleocytoplasm"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid6	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid6	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005622>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid6	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid45	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid45	<http://www.w3.org/2002/07/owl#annotatedTarget>	"nuclear membrane-ER network"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid45	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid45	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0042175>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid45	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid17	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0005622>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid17	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid17	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.w3.org/2000/01/rdf-schema#label>	"organelle envelope"
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0031967"
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A double membrane structure enclosing an organelle, including two lipid bilayers and the region between them. In some cases, an organelle envelope may have more than two membranes."
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid38
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid37
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031975>
+<http://purl.obolibrary.org/obo/GO_0031967>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid11	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0012505>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid11	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid11	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid52	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid52	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The part of a cell encompassing the cell cortex, the plasma membrane, and any external encapsulating structures."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid52	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid52	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0071944>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid52	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid24	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid24	<http://www.w3.org/2002/07/owl#annotatedTarget>	"plasma membrane lipid bilayer"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid24	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid24	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005886>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid24	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid37	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0043227>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid37	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid37	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"outer envelope"
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031965>
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1617136075"
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The outer, i.e. cytoplasm-facing, lipid bilayer of the nuclear envelope; continuous with the endoplasmic reticulum of the cell and sometimes studded with ribosomes."
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005640"
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0031968>
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear outer membrane"
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"perinuclear membrane"
+<http://purl.obolibrary.org/obo/GO_0005640>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid15
+<http://purl.obolibrary.org/obo/RO_0002131>	<http://www.w3.org/2000/01/rdf-schema#label>	"overlaps"
+<http://purl.obolibrary.org/obo/RO_0002131>	<http://www.geneontology.org/formats/oboInOwl#id>	"RO:0002131"
+<http://purl.obolibrary.org/obo/RO_0002131>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"RO:0002131"
+<http://purl.obolibrary.org/obo/RO_0002131>	<http://www.w3.org/2002/07/owl#propertyChainAxiom>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid2
+<http://purl.obolibrary.org/obo/RO_0002131>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#ObjectProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_flybase_ribbon"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid31	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:go_curators"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid31	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The external membrane of Gram-negative bacteria or certain organelles such as mitochondria and chloroplasts; freely permeable to most ions and metabolites."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid31	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid31	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0019867>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid31	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.w3.org/2000/01/rdf-schema#label>	"organelle"
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0043226"
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Organelle"
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1539965131"
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://purl.obolibrary.org/obo/IAO_0000115>	"Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane."
+<http://purl.obolibrary.org/obo/GO_0043226>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<file:///Users/cjm/repos/go-ontology/target/go.owl>	<http://www.geneontology.org/formats/oboInOwl#id>	"test"
+<file:///Users/cjm/repos/go-ontology/target/go.owl>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Ontology>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0042175>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The continuous network of membranes encompassing the nuclear outer membrane and the endoplasmic reticulum membrane."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:pr"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:vw"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mcc"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:bf"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid44	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:jl"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid5	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0198506732"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid5	<http://www.w3.org/2002/07/owl#annotatedTarget>	"A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid5	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid5	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005622>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid5	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#chebi_ph7_3>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#chebi_ph7_3>	<http://www.w3.org/2000/01/rdf-schema#comment>	"chebi_ph7_3"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#chebi_ph7_3>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid16	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"ISBN:0198547684"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid16	<http://www.w3.org/2002/07/owl#annotatedTarget>	"The outer, i.e. cytoplasm-facing, lipid bilayer of the nuclear envelope; continuous with the endoplasmic reticulum of the cell and sometimes studded with ribosomes."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid16	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid16	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005640>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid16	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>	"juxtamembrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"bacterial inner membrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid21
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0016020>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_agr>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_metagenomics>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"plasma membrane lipid bilayer"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"cell membrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.w3.org/2000/01/rdf-schema#label>	"plasma membrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>	"inner endospore membrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao1663586795"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Cell_membrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_drosophila>
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005886"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"cellular membrane"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins."
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"plasmalemma"
+<http://purl.obolibrary.org/obo/GO_0005886>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"cytoplasmic membrane"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid29	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0031967>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid29	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid29	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Vacuole"
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_generic>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0005773"
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_agr>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.w3.org/2000/01/rdf-schema#label>	"vacuole"
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"vacuolar carboxypeptidase Y"
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0043231>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_chembl>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_drosophila>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_mouse>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_plant>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_pir>
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A closed structure, found only in eukaryotic cells, that is completely surrounded by unit membrane and contains liquid material. Cells contain one or several vacuoles, that may have different functions from each other. Vacuoles have a diverse array of functions. They can act as a storage organelle for nutrients or waste products, as a degradative compartment, as a cost-effective way of increasing cell size, and as a homeostatic regulator controlling both turgor pressure and pH of the cytosol."
+<http://purl.obolibrary.org/obo/GO_0005773>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid19
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_synapse>	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>	<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_synapse>	<http://www.w3.org/2000/01/rdf-schema#comment>	"goslim_synapse"
+<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_synapse>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#AnnotationProperty>
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NE-ER network"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"nuclear envelope-endoplasmic reticulum network"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"NE-ER continuum"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"nuclear membrane-ER network"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://purl.obolibrary.org/obo/IAO_0000115>	"The continuous network of membranes encompassing the nuclear outer membrane and the endoplasmic reticulum membrane."
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>	"nuclear membrane-endoplasmic reticulum continuum"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"nuclear envelope-ER network"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0016020>
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid43
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.w3.org/2000/01/rdf-schema#label>	"nuclear outer membrane-endoplasmic reticulum membrane network"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0042175"
+<http://purl.obolibrary.org/obo/GO_0042175>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"nuclear envelope-endoplasmic reticulum continuum"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid10	<http://www.w3.org/2002/07/owl#someValuesFrom>	<http://purl.obolibrary.org/obo/GO_0005634>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid10	<http://www.w3.org/2002/07/owl#onProperty>	<http://purl.obolibrary.org/obo/BFO_0000050>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid10	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Restriction>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid51	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:go_curators"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid51	<http://www.w3.org/2002/07/owl#annotatedTarget>	"Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid51	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid51	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0043231>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid51	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.w3.org/2000/01/rdf-schema#label>	"organelle membrane"
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0031090"
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>	"intracellular membrane"
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao830981606"
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A membrane that is one of the two lipid bilayers of an organelle envelope or the outermost membrane of single membrane bound organelle."
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid32
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0016020>
+<http://purl.obolibrary.org/obo/GO_0031090>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.geneontology.org/formats/oboInOwl#id>	"GO:0012505"
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_flybase_ribbon>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.w3.org/2000/01/rdf-schema#label>	"endomembrane system"
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Class>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_candida>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	<http://purl.obolibrary.org/obo/GO_0110165>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid26
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_yeast>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.geneontology.org/formats/oboInOwl#inSubset>	<http://purl.obolibrary.org/obo/file:///Users/cjm/repos/go-ontology/target/go.owl#goslim_aspergillus>
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://purl.obolibrary.org/obo/IAO_0000115>	"A collection of membranous structures involved in transport within the cell. The main components of the endomembrane system are endoplasmic reticulum, Golgi bodies, vesicles, cell membrane and nuclear envelope. Members of the endomembrane system pass materials through each other or though the use of vesicles."
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"Wikipedia:Endomembrane_system"
+<http://purl.obolibrary.org/obo/GO_0012505>	<http://www.w3.org/2000/01/rdf-schema#subClassOf>	_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid25
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid23	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"NIF_Subcellular:sao6433132645"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid23	<http://www.w3.org/2002/07/owl#annotatedTarget>	"cellular membrane"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid23	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid23	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0005886>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid23	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid36	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:pz"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid36	<http://www.geneontology.org/formats/oboInOwl#hasDbXref>	"GOC:mah"
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid36	<http://www.w3.org/2002/07/owl#annotatedTarget>	"Either of the lipid bilayers that surround the nucleus and form the nuclear envelope; excludes the intermembrane space."
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid36	<http://www.w3.org/2002/07/owl#annotatedProperty>	<http://purl.obolibrary.org/obo/IAO_0000115>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid36	<http://www.w3.org/2002/07/owl#annotatedSource>	<http://purl.obolibrary.org/obo/GO_0031965>
+_:B8b2b7c91X2D8f98X2D463eX2D84f2X2Dbc1a251021a8genid36	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Axiom>

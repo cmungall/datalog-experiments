@@ -1,0 +1,73 @@
+#include "owl_from_rdf.dl"
+#include "test_harness.dl"
+
+.decl someValuesFrom(restr:symbol, p:symbol, v:symbol)
+someValuesFrom(restr,p,v) :-
+    rdf(restr,OWL_ON_PROPERTY, p),
+    rdf(restr,OWL_SOME_VALUES_FROM, v).
+
+.decl subPropertyOf_inf(s: symbol, o: symbol)
+.output subPropertyOf_inf
+subPropertyOf_inf(s, s) :- owl_object_property(s). // todo dataprop
+subPropertyOf_inf(s, o) :- subPropertyOf(s, o).
+subPropertyOf_inf(s, o) :- subPropertyOf(s, z), subPropertyOf_inf(z, o).
+//subPropertyOf_inf(s, o) :- equivalentProperty_inf(s, o).
+
+.decl subClassOf_inf(s: symbol, o: symbol)
+.output subClassOf_inf
+subClassOf_inf(s, s) :- owl_class(s).
+subClassOf_inf(s, o) :- subClassOf(s, o).
+subClassOf_inf(s, o) :- subClassOf_inf(s, z), subClassOf_inf(z, o).
+subClassOf_inf(s, o) :- equivalentClass_inf(s, o).
+
+// (sp SOME sv) subClassOf (op some ov) IF sp subClassOf op AND sv subClassOf ov
+subClassOf_inf(s, o) :-
+    someValuesFrom(s,sp,sv),
+    someValuesFrom(o,op,ov),
+    subClassOf_inf(sv, ov),
+    subPropertyOf_inf(sp, op).
+
+// Finger[1,2,3] subClassOf ([member]PartOf some Hand)* <-- sRestr
+// Hand subClassOf partOf some Forelimb
+// Tr(partOf)
+// ==> Finger[1,3,] subClassOf (partOf some Forelimb)* <-- oRestr
+// e.g. partOf some Finger subClassOf partOf some Hand IF Finger subClassOf partOf some Hand and Tr(partOf)
+subClassOf_inf(sRestr, oRestr) :-
+    someValuesFrom(oRestr, p, _oFiller),
+    transitive(p),
+    someValuesFrom(sRestr, sp, sv),
+    subPropertyOf_inf(sp, p),
+    subClassOf_inf(sv, oRestr).
+
+
+// s subClassOf (o AND _) ==> s subClassOf o
+subClassOf_inf(s, o) :- intersectionOf2(s,o,_).
+subClassOf_inf(s, o) :- intersectionOf2(s,_,o).
+
+.decl subClassOf_inf_proper(s: symbol, o: symbol)
+.output subClassOf_inf_proper
+subClassOf_inf_proper(s,o) :-
+    subClassOf_inf(s,o),
+    ! equivalentClass_inf(s,o).
+
+.decl subClassOf_inf_chain(s: symbol, z: symbol, o: symbol)
+subClassOf_inf_chain(s,z,o) :-
+    subClassOf_inf_proper(s,z),
+    subClassOf_inf_proper(z,o).
+.decl subClassOf_inf_direct(s: symbol, o: symbol)
+.output subClassOf_inf_direct
+subClassOf_inf_direct(s,o) :-
+    subClassOf_inf_proper(s,o),
+    ! subClassOf_inf_chain(s,_,o).
+
+.decl equivalentClass_inf(s: symbol, o: symbol) eqrel // Equivalence Relation
+//.decl equivalentClass_inf(s: symbol, o: symbol) // Equivalence Relation
+.output equivalentClass_inf
+equivalentClass_inf(s, o) :- equivalentClass(s, o).
+//equivalentClass_inf(s, o) :- equivalentClass(o, s).
+//equivalentClass_inf(s, o) :- equivalentClass_inf(s,z), equivalentClass_inf(z, o).
+equivalentClass_inf(s, o) :- subClassOf_inf(s, o), subClassOf_inf(o,s).
+
+.decl edge(s:symbol, p:symbol, o:symbol)
+edge(s,"subClassOf_inf_direct",o) :-
+    subClassOf_inf_direct(s,o).
