@@ -7,14 +7,14 @@ EL classifier - EXPERIMENTAL
 #include "owl_from_rdf.dl"
 #include "test_harness.dl"
 
-.decl subPropertyOf_inf(s: symbol, o: symbol)
+.decl subPropertyOf_inf(s: ObjectPropertyExpression, o: ObjectPropertyExpression)
 .output subPropertyOf_inf
 subPropertyOf_inf(s, s) :- owl_object_property(s). // todo dataprop
 subPropertyOf_inf(s, o) :- subPropertyOf(s, o).
 subPropertyOf_inf(s, o) :- subPropertyOf(s, z), subPropertyOf_inf(z, o).
 //subPropertyOf_inf(s, o) :- equivalentProperty_inf(s, o).
 
-.decl subClassOf_inf(s: symbol, o: symbol)
+.decl subClassOf_inf(s: ClassExpression, o: ClassExpression)
 .output subClassOf_inf
 subClassOf_inf(s, s) :- owl_class(s).
 subClassOf_inf(s, o) :- subClassOf(s, o).
@@ -45,23 +45,23 @@ subClassOf_inf(sRestr, oRestr) :-
 subClassOf_inf(s, o) :- intersectionOf2(s,o,_).
 subClassOf_inf(s, o) :- intersectionOf2(s,_,o).
 
-.decl subClassOf_inf_proper(s: symbol, o: symbol)
+.decl subClassOf_inf_proper(s: ClassExpression, o: ClassExpression)
 .output subClassOf_inf_proper
 subClassOf_inf_proper(s,o) :-
     subClassOf_inf(s,o),
     ! equivalentClass_inf(s,o).
 
-.decl subClassOf_inf_chain(s: symbol, z: symbol, o: symbol)
+.decl subClassOf_inf_chain(s: ClassExpression, z: ClassExpression, o: ClassExpression)
 subClassOf_inf_chain(s,z,o) :-
     subClassOf_inf_proper(s,z),
     subClassOf_inf_proper(z,o).
-.decl subClassOf_inf_direct(s: symbol, o: symbol)
+.decl subClassOf_inf_direct(s: ClassExpression, o: ClassExpression)
 .output subClassOf_inf_direct
 subClassOf_inf_direct(s,o) :-
     subClassOf_inf_proper(s,o),
     ! subClassOf_inf_chain(s,_,o).
 
-.decl equivalentClass_inf(s: symbol, o: symbol) eqrel // Equivalence Relation
+.decl equivalentClass_inf(s: ClassExpression, o: ClassExpression) eqrel // Equivalence Relation
 //.decl equivalentClass_inf(s: symbol, o: symbol) // Equivalence Relation
 .output equivalentClass_inf
 equivalentClass_inf(s, o) :- equivalentClass(s, o).
@@ -69,6 +69,6 @@ equivalentClass_inf(s, o) :- equivalentClass(s, o).
 //equivalentClass_inf(s, o) :- equivalentClass_inf(s,z), equivalentClass_inf(z, o).
 equivalentClass_inf(s, o) :- subClassOf_inf(s, o), subClassOf_inf(o,s).
 
-.decl edge(s:symbol, p:symbol, o:symbol)
+.decl edge(s:Node, p:Node, o:Node)
 edge(s,"subClassOf_inf_direct",o) :-
     subClassOf_inf_direct(s,o).
