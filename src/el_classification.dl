@@ -1,10 +1,11 @@
+/**
+
+EL classifier - EXPERIMENTAL
+
+*/
+
 #include "owl_from_rdf.dl"
 #include "test_harness.dl"
-
-.decl someValuesFrom(restr:symbol, p:symbol, v:symbol)
-someValuesFrom(restr,p,v) :-
-    rdf(restr,OWL_ON_PROPERTY, p),
-    rdf(restr,OWL_SOME_VALUES_FROM, v).
 
 .decl subPropertyOf_inf(s: symbol, o: symbol)
 .output subPropertyOf_inf

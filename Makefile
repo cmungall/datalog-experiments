@@ -2,9 +2,10 @@ BENCHDIR = benchmarks
 BENCHDIR_CL = classification
 ELDIR = el
 TESTDIR = tests
-BENCH_ONTS = uberon pato ro mondo hp mp go chebi obi zfa envo
+BENCH_ONTS = uberon pato ro mondo hp mp go chebi obi zfa envo monarch envo snomed fbbt ncbitaxon
 
 RUN = souffle
+RG = relation-graph
 
 ifdef SOUFFLE_THREADS
 RUN = time docker run -v${PWD}:/mnt -w /mnt -it souffle/ubuntu:xenial souffle -j $(SOUFFLE_THREADS)
@@ -13,15 +14,15 @@ endif
 # ----------------------------------------
 # Tests
 # ----------------------------------------
-TESTS = go-nuclear-membrane
-test: $(patsubst %, t-%, $(TESTS))
+TESTS = rg-go-nucleus anatomy-classification-el anatomy-classification-rg
+test: $(patsubst %, test-%, $(TESTS))
 
 $(TESTDIR)/%/rdf.facts: $(TESTDIR)/%/ontology.owl
 	robot query -f tsv -i $< -q sparql/triples.rq $@
 .PRECIOUS: $(TESTDIR)/%/rdf.facts
 
-t-%: $(TESTDIR)/%/rdf.facts
-	(time souffle -F$(TESTDIR)/$* -D$(TESTDIR)/$* src/relation_graph.dl) >> $(TESTDIR)/$*/LOG && cat $(TESTDIR)/$*/test_summary.csv
+#t-%: $(TESTDIR)/%/rdf.facts
+#	(time souffle -F$(TESTDIR)/$* -D$(TESTDIR)/$* src/relation_graph.dl) >> $(TESTDIR)/$*/LOG && cat $(TESTDIR)/$*/test_summary.csv
 
 test-%: tests/%/test.dl $(TESTDIR)/%/rdf.facts
 	$(RUN) -F$(TESTDIR)/$* -D$(TESTDIR)/$* $< && cat $(TESTDIR)/$*/test_summary.csv && (test -s $(TESTDIR)/$*/pass.csv) && (test -s $(TESTDIR)/$*/fail.csv && echo FAIL || echo PASS)
@@ -93,7 +94,7 @@ benchmark-dl-%: $(BENCHDIR)/%/rdf.facts
 	(time $(RUN)  -F$(BENCHDIR)/$* -D$(BENCHDIR)/$* src/relation_graph.dl) >& $(BENCHDIR)/$*/DL-LOG && cat $(BENCHDIR)/$*/{DL-LOG,test_summary.csv}
 
 benchmark-whelk-%: merged/%.owl
-	(time relation-graph --ontology-file $< --non-redundant-output-file $(BENCHDIR)/$*/owlrg-nr.ttl --redundant-output-file $(BENCHDIR)/$*/owlrg-r.ttl) >& $(BENCHDIR)/$*/WHELK-LOG && cat $(BENCHDIR)/$*/WHELK-LOG
+	(time $(RG) --ontology-file $< --non-redundant-output-file $(BENCHDIR)/$*/owlrg-nr.ttl --redundant-output-file $(BENCHDIR)/$*/owlrg-r.ttl) >& $(BENCHDIR)/$*/WHELK-LOG && cat $(BENCHDIR)/$*/WHELK-LOG
 
 %.sorted: %
 	perl -npe 's@\s*\.\s*\n@\n@g;s@ @\t@g' $< | sort > $@

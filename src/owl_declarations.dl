@@ -1,0 +1,75 @@
+/** OWL Datamodel
+
+This module is declarations only
+
+The intent is either that declarations are supplied directly OR inferred from RDF (see owl_from_rdf.dl)
+
+STATUS: PARTIAL - only a subset of EL is supported
+
+*/
+
+/** TODO: Type system
+
+we would need to 'cast up' to use the type system; e.g.
+
+.type Node <: symbol
+.type Class <: Node
+.type Instance <: Node
+
+.decl rdf(s:Node, p:Node, o:Node)
+
+.decl is_Node(s:Node)
+is_Node(x) :- rdf(x,_,_).
+is_Node(x) :- rdf(_,x,_).
+is_Node(x) :- rdf(_,_,x).
+
+.decl as_Instance(in:Node, out:Instance)
+as_Instance(x,cat(x,"")) :-
+  is_Node(x).
+
+.decl as_Class(in:symbol, out:Class)
+as_Class(x,cat(x,"")) :-
+  is_Node(x).
+
+
+rdf("fido","type","dog").
+
+.decl Type(s:Instance, o:Class)
+Type(s,o) :-
+   rdf(s1,"type",o1),
+   as_Instance(s1,s),
+   as_Class(o1,o).
+.output Type
+
+*/
+// TYPES: experimental
+// currently not used as there is no way to "cast" something as a type;
+// e.g. see owl_from_rdf.dl, where we infer subClassOf from rdf edges;
+// we could cast e.g. by turning to strings but that is awkward...
+.type AnonymousEntity <: symbol
+.type NamedEntity <: symbol
+.type Entity = AnonymousEntity | NamedEntity
+
+.type NamedClass <: NamedEntity
+.type AnonymousClassExpression <: AnonymousEntity
+.type ClassExpression = NamedClass | AnonymousClassExpression
+
+.type NamedObjectProperty <: NamedEntity
+.type AnonymousObjectPropertyExpression <: AnonymousEntity
+.type ObjectPropertyExpression = NamedObjectProperty | AnonymousObjectPropertyExpression
+
+
+.decl chain(p:symbol, p1:symbol, p2:symbol)
+.decl intersectionOf1(c:symbol, x1:symbol)
+.decl intersectionOf2(c:symbol, x1:symbol, x2:symbol)
+.decl intersectionOf3(c:symbol, x1:symbol, x2:symbol, x3:symbol)
+.decl intersectionOf_member(c:symbol, x:symbol)
+.decl transitive(p:symbol)
+.decl subClassOf(s:symbol, o:symbol)
+.decl equivalentClass(s:symbol, o:symbol)
+.decl subPropertyOf(s:symbol, o:symbol)
+.decl owl_class(s: symbol)
+.decl owl_object_property(s: symbol)
+.decl owl_named_individual(s: symbol)
+.decl owl_named_entity(s: symbol)
+.decl someValuesFrom(restr:symbol, p:symbol, v:symbol)

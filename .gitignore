@@ -1,5 +1,5 @@
 download
-benchmarks/*/LOG
+benchmarks/*/*LOG
 benchmarks/*/owlrg*
 benchmarks/*/*.csv
 benchmarks/*/*.sorted
@@ -14,3 +14,11 @@ RDF-Cache/
 scratch
 merged/
 .idea/
+tmp/
+tests/*/*.csv
+classification/*/*.csv
+*.ORIG
+*.LOG
+*.csv
+bin/relation_graph
+LOG

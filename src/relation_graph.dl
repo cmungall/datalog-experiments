@@ -1,5 +1,17 @@
 /**
  relation_graph / owlstar inference
+
+ Alternate implementation of https://github.com/balhoff/relation-graph
+
+ Inferences not included
+
+  - domain/range (easy to add but does not yield useful edges)
+
+  TODO:
+
+  for this to be more sound we should replace edge/3 with edge/4, with the last argument being the
+  logical quantification, as per owlstar
+
 */
 #include "owl_from_rdf.dl"
 #include "test_harness.dl"

@@ -1,26 +1,21 @@
-#include "src/prefixes.dl"
-//.type owlClassExpression <: symbol
-//.type owlPropertyExpression <: symbol
-
-.decl rdf(s:symbol, p:symbol, o:symbol)
-.input rdf
-
 /**
 
 RDF to OWL mapping
 
+Status: PARTIAL implementation
+
 */
-.decl chain(p:symbol, p1:symbol, p2:symbol)
-.decl intersectionOf2(c:symbol, x1:symbol, x2:symbol)
-.decl transitive(p:symbol)
-.decl subClassOf(s:symbol, o:symbol)
-.decl equivalentClass(s:symbol, o:symbol)
-.decl subPropertyOf(s:symbol, o:symbol)
+
+#include "src/prefixes.dl"
+#include "src/owl_declarations.dl"
+
+
+.decl rdf(s:symbol, p:symbol, o:symbol)
+.input rdf
+
+
 .decl subPropertyOf_tr(s:symbol, o:symbol)
-.decl owl_class(s: symbol)
-.decl owl_object_property(s: symbol)
-.decl owl_named_individual(s: symbol)
-.decl owl_named_entity(s: symbol)
+
 
 
 
@@ -37,6 +32,7 @@ transitive(RDFS_SUBCLASS_OF).
 
 // convenience predicate for asserted subclass
 subClassOf(s,o) :- rdf(s,RDFS_SUBCLASS_OF,o).
+.output subClassOf
 
 // convenience predicate for asserted subclass
 equivalentClass(s,o) :- rdf(s,OWL_EQUIVALENT_CLASS,o).
@@ -59,6 +55,17 @@ chain(p, p1, p2) :-
 chain(p, p, p) :- transitive(p).
 .output chain
 
+someValuesFrom(restr,p,v) :-
+    rdf(restr,OWL_ON_PROPERTY, p),
+    rdf(restr,OWL_SOME_VALUES_FROM, v).
+
+// noop
+intersectionOf1(r, x1) :-
+    rdf(r,OWL_INTERSECTION_OF,list),
+    rdf(list, RDF_FIRST, x1),
+    rdf(list, RDF_REST, RDF_NIL).
+.output intersectionOf1
+
 intersectionOf2(r, x1, x2) :-
     rdf(r,OWL_INTERSECTION_OF,list),
     rdf(list, RDF_FIRST, x1),
@@ -66,3 +73,27 @@ intersectionOf2(r, x1, x2) :-
     rdf(list2, RDF_FIRST, x2),
     rdf(list2, RDF_REST, RDF_NIL).
 .output intersectionOf2
+
+intersectionOf3(r, x1, x2, x3) :-
+    rdf(r,OWL_INTERSECTION_OF,list),
+    rdf(list, RDF_FIRST, x1),
+    rdf(list, RDF_REST, list2),
+    rdf(list2, RDF_FIRST, x2),
+    rdf(list2, RDF_REST, list3),
+    rdf(list3, RDF_FIRST, x3),
+    rdf(list3, RDF_REST, RDF_NIL).
+.output intersectionOf2
+
+intersectionOf_member(r, x) :-
+    rdf(r,OWL_INTERSECTION_OF,list),
+    rdflist_member(list, x).
+.output intersectionOf_member
+
+.decl rdflist_member(list:symbol, x:symbol)
+rdflist_member(list, x) :-
+    rdf(list, RDF_FIRST, x).
+rdflist_member(list, x) :-
+    rdf(list, RDF_REST, list2),
+    rdflist_member(list2, x).
+
+

@@ -1,0 +1,58 @@
+/**
+
+RG classifier - EXPERIMENTAL
+
+*/
+
+#include "relation_graph.dl"
+
+.decl subsumed_by(s: symbol, o: symbol)
+.output subsumed_by
+subsumed_by(s, o) :-
+    edge(s, RDFS_SUBCLASS_OF, o).
+subsumed_by(s, o) :-
+    someValuesFrom(o, p, v),
+    edge(s, p, v).
+
+// s subClassOf o where o = R some Y, or o = Y
+edge(s, RDFS_SUBCLASS_OF, o) :-
+    equivalentClass_inf(o, ixn),
+    subsumed_by(s, ixn).
+edge(s, RDFS_SUBCLASS_OF, o) :-
+    equivalentClass_inf(o, ixn),
+    intersectionOf2(ixn, x1, x2),
+    subsumed_by(s, x1),
+    subsumed_by(s, x2).
+edge(s, RDFS_SUBCLASS_OF, o) :-
+    equivalentClass_inf(o, ixn),
+    intersectionOf3(ixn, x1, x2, x3),
+    subsumed_by(s, x1),
+    subsumed_by(s, x2),
+    subsumed_by(s, x3).
+
+// relaxation
+subClassOf(s, o) :-
+    equivalentClass_inf(s, ixn),
+    intersectionOf_member(ixn, o).
+subClassOf(s, o) :-
+    equivalentClass_inf(s, o).
+
+.decl equivalentClass_inf(s: symbol, o: symbol) eqrel // Equivalence Relation
+//.decl equivalentClass_inf(s: symbol, o: symbol) // Equivalence Relation
+.output equivalentClass_inf
+equivalentClass_inf(s, o) :- equivalentClass(s, o).
+//equivalentClass_inf(s, o) :- equivalentClass(o, s).
+//equivalentClass_inf(s, o) :- equivalentClass_inf(s,z), equivalentClass_inf(z, o).
+equivalentClass_inf(s, o) :-
+    edge(s, RDFS_SUBCLASS_OF, o),
+    edge(o, RDFS_SUBCLASS_OF, s).
+
+// todo: move to relation_graph
+edge(s, OWL_EQUIVALENT_CLASS, s) :-
+    equivalentClass_inf(s, s).
+edge(s, p, o) :-
+    equivalentClass_inf(s, z),
+    edge(z, p, o).
+edge(s, p, o) :-
+    edge(s, p, z),
+    equivalentClass_inf(z, o).
