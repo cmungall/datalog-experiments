@@ -8,46 +8,12 @@ STATUS: PARTIAL - only a subset of EL is supported
 
 */
 
-/** TODO: Type system
-
-we would need to 'cast up' to use the type system; e.g.
-
 .type Node <: symbol
-.type Class <: Node
-.type Instance <: Node
+.type Literal <: symbol
+.type NodeOrLiteral = Node | Literal
 
-.decl rdf(s:Node, p:Node, o:Node)
-
-.decl is_Node(s:Node)
-is_Node(x) :- rdf(x,_,_).
-is_Node(x) :- rdf(_,x,_).
-is_Node(x) :- rdf(_,_,x).
-
-.decl as_Instance(in:Node, out:Instance)
-as_Instance(x,cat(x,"")) :-
-  is_Node(x).
-
-.decl as_Class(in:symbol, out:Class)
-as_Class(x,cat(x,"")) :-
-  is_Node(x).
-
-
-rdf("fido","type","dog").
-
-.decl Type(s:Instance, o:Class)
-Type(s,o) :-
-   rdf(s1,"type",o1),
-   as_Instance(s1,s),
-   as_Class(o1,o).
-.output Type
-
-*/
-// TYPES: experimental
-// currently not used as there is no way to "cast" something as a type;
-// e.g. see owl_from_rdf.dl, where we infer subClassOf from rdf edges;
-// we could cast e.g. by turning to strings but that is awkward...
-.type AnonymousEntity <: symbol
-.type NamedEntity <: symbol
+.type AnonymousEntity <: Node
+.type NamedEntity <: Node
 .type Entity = AnonymousEntity | NamedEntity
 
 .type NamedClass <: NamedEntity

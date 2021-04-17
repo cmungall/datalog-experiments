@@ -41,7 +41,7 @@ subPropertyOf(as(s,ObjectPropertyExpression),as(o,ObjectPropertyExpression)) :- 
 
 // transitive subpropertyOf
 // TODO - move this
-.decl subPropertyOf_tr(s:symbol, o:symbol)
+.decl subPropertyOf_tr(s:ObjectPropertyExpression, o:ObjectPropertyExpression)
 subPropertyOf_tr(s,o) :- subPropertyOf(s,o).
 subPropertyOf_tr(s,o) :- subPropertyOf(s,z), subPropertyOf_tr(z,o).
 
