@@ -1,15 +1,15 @@
 /** test harness
 */
-.decl expected(s:symbol, p:symbol, o:symbol)
+.decl expected(s:Node, p:Node, o:Node)
 .input expected
 
 // test harness
-.decl unexpected(s:symbol, p:symbol, o:symbol)
+.decl unexpected(s:Node, p:Node, o:Node)
 .input unexpected
 
-.decl fail(test: symbol, s:symbol, p:symbol, o:symbol)
+.decl fail(test: Node, s:Node, p:Node, o:Node)
 .output fail
-.decl pass(test: symbol, s:symbol, p:symbol, o:symbol)
+.decl pass(test: Node, s:Node, p:Node, o:Node)
 .output pass
 
 fail("expected", s,p,o) :- expected(s,p,o), ! edge(s,p,o).

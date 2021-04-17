@@ -6,7 +6,7 @@ RG classifier - EXPERIMENTAL
 
 #include "relation_graph.dl"
 
-.decl subsumed_by(s: symbol, o: symbol)
+.decl subsumed_by(s: Node, o: Node)
 .output subsumed_by
 subsumed_by(s, o) :-
     edge(s, RDFS_SUBCLASS_OF, o).
