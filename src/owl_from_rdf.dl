@@ -10,15 +10,11 @@ Status: PARTIAL implementation
 #include "src/owl_declarations.dl"
 
 
-.decl rdf(s:symbol, p:symbol, o:symbol)
+.decl rdf(s:Node, p:Node, o:NodeOrLiteral)
 .input rdf
 
-
-
-
-
-
 owl_class(as(x, NamedClass)) :- rdf(x, RDF_TYPE, OWL_CLASS).
+// todo: decide where to put basic type inference, e.g.
 //owl_class(x) :- rdf(x, RDFS_SUBCLASS_OF, _).
 //owl_class(x) :- rdf(_, RDFS_SUBCLASS_OF, x).
 owl_named_individual(as(x, NamedIndividual)) :- rdf(x, RDF_TYPE, OWL_NAMED_INDIVIDUAL).

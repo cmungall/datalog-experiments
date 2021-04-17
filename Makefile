@@ -3,6 +3,7 @@ BENCHDIR_CL = classification
 ELDIR = el
 TESTDIR = tests
 BENCH_ONTS = uberon pato ro mondo hp mp go chebi obi zfa envo monarch envo snomed fbbt ncbitaxon
+BENCH_UNIT_ONTS = pato ro zfa envo
 
 RUN = souffle
 RG = relation-graph
@@ -16,6 +17,8 @@ endif
 # ----------------------------------------
 TESTS = rg-go-nucleus anatomy-classification-el anatomy-classification-rg
 test: $(patsubst %, test-%, $(TESTS))
+
+btest: $(patsubst %, benchmark-dl-%, $(BENCH_UNIT_ONTS))
 
 $(TESTDIR)/%/rdf.facts: $(TESTDIR)/%/ontology.owl
 	robot query -f tsv -i $< -q sparql/triples.rq $@
