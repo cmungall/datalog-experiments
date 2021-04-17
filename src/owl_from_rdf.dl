@@ -14,39 +14,39 @@ Status: PARTIAL implementation
 .input rdf
 
 
-.decl subPropertyOf_tr(s:symbol, o:symbol)
 
 
 
 
-owl_class(x) :- rdf(x, RDF_TYPE, OWL_CLASS).
+owl_class(as(x, NamedClass)) :- rdf(x, RDF_TYPE, OWL_CLASS).
 //owl_class(x) :- rdf(x, RDFS_SUBCLASS_OF, _).
 //owl_class(x) :- rdf(_, RDFS_SUBCLASS_OF, x).
-owl_named_individual(x) :- rdf(x, RDF_TYPE, OWL_NAMED_INDIVIDUAL).
+owl_named_individual(as(x, NamedIndividual)) :- rdf(x, RDF_TYPE, OWL_NAMED_INDIVIDUAL).
 owl_named_entity(x) :- owl_class(x) ; owl_named_individual(x).
-owl_object_property(x) :- rdf(x, RDF_TYPE, OWL_OBJECT_PROPERTY).
+owl_object_property(as(x, NamedObjectProperty)) :- rdf(x, RDF_TYPE, OWL_OBJECT_PROPERTY).
 
 // convenience predicate
-transitive(p) :- rdf(p, RDF_TYPE, OWL_TRANSITIVE_PROPERTY).
-transitive(RDFS_SUBCLASS_OF).
+transitive(as(p, NamedObjectProperty)) :- rdf(p, RDF_TYPE, OWL_TRANSITIVE_PROPERTY).
+transitive(as(RDFS_SUBCLASS_OF, NamedObjectProperty)). // todo - move to RG?
 
 // convenience predicate for asserted subclass
-subClassOf(s,o) :- rdf(s,RDFS_SUBCLASS_OF,o).
+subClassOf(as(s,ClassExpression),as(o,ClassExpression)) :- rdf(s,RDFS_SUBCLASS_OF,o).
 .output subClassOf
 
 // convenience predicate for asserted subclass
-equivalentClass(s,o) :- rdf(s,OWL_EQUIVALENT_CLASS,o).
+equivalentClass(as(s,ClassExpression),as(o,ClassExpression)) :- rdf(s,OWL_EQUIVALENT_CLASS,o).
 
 // convenience predicate for asserted subproperty
-subPropertyOf(s,o) :- rdf(s,RDFS_SUBPROPERTY_OF,o).
+subPropertyOf(as(s,ObjectPropertyExpression),as(o,ObjectPropertyExpression)) :- rdf(s,RDFS_SUBPROPERTY_OF,o).
 
 // transitive subpropertyOf
+// TODO - move this
+.decl subPropertyOf_tr(s:symbol, o:symbol)
 subPropertyOf_tr(s,o) :- subPropertyOf(s,o).
 subPropertyOf_tr(s,o) :- subPropertyOf(s,z), subPropertyOf_tr(z,o).
-//.output subPropertyOf_tr
 
 // property chains (currently only length 2 supported)
-chain(p, p1, p2) :-
+chain(as(p,ObjectPropertyExpression), as(p1,ObjectPropertyExpression), as(p2,ObjectPropertyExpression)) :-
     rdf(p,OWL_PROPERTY_CHAIN_AXIOM,list),
     rdf(list, RDF_FIRST, p1),
     rdf(list, RDF_REST, list2),
@@ -55,18 +55,18 @@ chain(p, p1, p2) :-
 chain(p, p, p) :- transitive(p).
 .output chain
 
-someValuesFrom(restr,p,v) :-
+someValuesFrom(as(restr,AnonymousClassExpression),as(p,ObjectPropertyExpression),as(v,ClassExpression)) :-
     rdf(restr,OWL_ON_PROPERTY, p),
     rdf(restr,OWL_SOME_VALUES_FROM, v).
 
 // noop
-intersectionOf1(r, x1) :-
+intersectionOf1(as(r,AnonymousClassExpression), as(x1,AnonymousClassExpression)) :-
     rdf(r,OWL_INTERSECTION_OF,list),
     rdf(list, RDF_FIRST, x1),
     rdf(list, RDF_REST, RDF_NIL).
 .output intersectionOf1
 
-intersectionOf2(r, x1, x2) :-
+intersectionOf2(as(r,AnonymousClassExpression), as(x1,AnonymousClassExpression), as(x2,AnonymousClassExpression)) :-
     rdf(r,OWL_INTERSECTION_OF,list),
     rdf(list, RDF_FIRST, x1),
     rdf(list, RDF_REST, list2),
@@ -74,7 +74,7 @@ intersectionOf2(r, x1, x2) :-
     rdf(list2, RDF_REST, RDF_NIL).
 .output intersectionOf2
 
-intersectionOf3(r, x1, x2, x3) :-
+intersectionOf3(as(r,AnonymousClassExpression), as(x1,AnonymousClassExpression), as(x2,AnonymousClassExpression), as(x3,AnonymousClassExpression)) :-
     rdf(r,OWL_INTERSECTION_OF,list),
     rdf(list, RDF_FIRST, x1),
     rdf(list, RDF_REST, list2),
@@ -82,9 +82,9 @@ intersectionOf3(r, x1, x2, x3) :-
     rdf(list2, RDF_REST, list3),
     rdf(list3, RDF_FIRST, x3),
     rdf(list3, RDF_REST, RDF_NIL).
-.output intersectionOf2
+.output intersectionOf3
 
-intersectionOf_member(r, x) :-
+intersectionOf_member(as(r,AnonymousClassExpression), as(x,AnonymousClassExpression)) :-
     rdf(r,OWL_INTERSECTION_OF,list),
     rdflist_member(list, x).
 .output intersectionOf_member

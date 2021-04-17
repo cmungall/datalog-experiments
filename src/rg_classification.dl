@@ -37,13 +37,13 @@ subClassOf(s, o) :-
 subClassOf(s, o) :-
     equivalentClass_inf(s, o).
 
-.decl equivalentClass_inf(s: symbol, o: symbol) eqrel // Equivalence Relation
+.decl equivalentClass_inf(s: ClassExpression, o: ClassExpression) eqrel // Equivalence Relation
 //.decl equivalentClass_inf(s: symbol, o: symbol) // Equivalence Relation
 .output equivalentClass_inf
 equivalentClass_inf(s, o) :- equivalentClass(s, o).
 //equivalentClass_inf(s, o) :- equivalentClass(o, s).
 //equivalentClass_inf(s, o) :- equivalentClass_inf(s,z), equivalentClass_inf(z, o).
-equivalentClass_inf(s, o) :-
+equivalentClass_inf(as(s, ClassExpression), as(o, ClassExpression)) :-
     edge(s, RDFS_SUBCLASS_OF, o),
     edge(o, RDFS_SUBCLASS_OF, s).
 
